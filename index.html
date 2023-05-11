@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Good Vibes Form</h1>
+<p id="description" class="description text-center">
+   Tell us something positive that happened to you today
+  </p>
+</header>
+<form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" name="name" id="name" class"form-control" placeholder="Enter your name" required>
+ </div>
+<div class="form-group">
+  <label id="email-label" for="email">Email</label>
+  <input type="email" name="email" id="email"class="form-control" placeholder="Enter your email" required>
+  </div>
+   <div class="form-group">
+     <label id="number-label" for="number">On a scale of 1-10, how good was it?
+       </label>
+      <input type="number" name="age" id="number" min="1" max="10" class="form-control" placeholder="Enter a number between 1-10"
+      </div>
+      <div class="form-group">
+        <p>Where did it happen?</p>
+        <label>
+          <select id="dropdown" name="experience" class="form-control" required> 
+            <option disabled selected value>----</option>
+            <option value="home">At Home</option>
+            <option value="work">At work</option>
+            <option value="Outside">Outside</option>
+            <option value="preferNo">Prefer not to say</option>
+        </select>
+      </div>
+<div class="form-group">
+  <p>At what time of day?</p>
+  <label>
+  <input name="tod" value="definitely" type="radio" class="input-radio" checked>Morning
+    </label>
+    <br>
+    <input name="tod" value="Maybe" type="radio" class="input-radio">Afternoon
+    </label>
+    <br>
+    <input name="tod" value="not-sure" type="radio" class="input-radio" >Evening
+    </label>
+    </div>
+
+   <div class="form-group">
+     <p>What emotions did you experience?</p>
+     <span class="clue">     (Check all that apply)</span>
+     </p>
+       <label>
+         <input name="emotions" value="Excited" type="checkbox" class="input-checkbox">Excited
+         </label>
+         <br>
+       <label>
+         <input name="emotions" value="Humbled" type="checkbox" class="input-checkbox">Humbled
+         </label>
+         <br>
+          <label>
+         <input name="emotions" value="Elated" type="checkbox" class="input-checkbox">Elated
+         </label>
+          <label>
+            <br>
+         <input name="emotions" value="Loved" type="checkbox" class="input-checkbox">Loved
+         </label>
+          <label>
+            <br>
+         <input name="prefer" value="Enthusiastic" type="checkbox" class="input-checkbox">Enthusiastic
+         </label>
+         </div>
+<div class="form-group">
+  <p>Please describe your positive experience</p>
+  <textarea id="thoughts" class="input-textarea" name="tbox" placeholder="Enter here">
+  </textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit" id="submit" class="submit-button"> Submit </button>
+    </div>
+    </form>
+  </div>
+ </body>
+<html>                      
